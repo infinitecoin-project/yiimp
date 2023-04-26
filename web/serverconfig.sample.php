@@ -15,9 +15,9 @@ define('YAAMP_PRODUCTION', true);
 define('YAAMP_RENTAL', true);
 define('YAAMP_LIMIT_ESTIMATE', false);
 
-define('YAAMP_FEES_SOLO', 1);
+define('YAAMP_FEES_SOLO', 5);
+define('YAAMP_FEES_MINING', 2);
 
-define('YAAMP_FEES_MINING', 0.5);
 define('YAAMP_FEES_EXCHANGE', 2);
 define('YAAMP_FEES_RENTING', 2);
 define('YAAMP_TXFEE_RENTING_WD', 0.002);
@@ -40,7 +40,7 @@ define('YAAMP_ADMIN_IP', ''); // samples: "80.236.118.26,90.234.221.11" or "10.0
 define('YAAMP_ADMIN_WEBCONSOLE', true);
 define('YAAMP_CREATE_NEW_COINS', true);
 define('YAAMP_NOTIFY_NEW_COINS', false);
-define('YAAMP_DEFAULT_ALGO', 'x11');
+define('YAAMP_DEFAULT_ALGO', 'scrypt');
 
 define('YAAMP_USE_NGINX', false);
 
@@ -76,14 +76,14 @@ $cold_wallet_table = array(
 // Sample fixed pool fees
 $configFixedPoolFees = array(
         'zr5' => 2.0,
-        'scrypt' => 20.0,
-        'sha256' => 5.0,
+        'scrypt' => 2.0,
+        'sha256' => 2.0,
 );
 
 // Sample fixed pool fees solo
 $configFixedPoolFeesSolo = array(
-		'zr5' => 2.0,
-        'scrypt' => 2.0,
+	'zr5' => 5.0,
+        'scrypt' => 5.0,
         'sha256' => 5.0,
 );
 
