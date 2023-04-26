@@ -405,10 +405,10 @@ if ($coin->id) {
 	$port = getAlgoPort($coin->algo);
 	$dedport = $coin->dedicatedport;
 	echo "daemon=1\n";
-    echo "server=1\n";
-    echo "listen=1\n";
-    echo "maxconnections=24\n";
-    echo "rpcthreads=64\n";
+        echo "server=1\n";
+        echo "listen=1\n";
+        echo "maxconnections=24\n";
+        echo "rpcthreads=64\n";
 	echo "rpcuser={$coin->rpcuser}\n";
 	echo "rpcpassword={$coin->rpcpasswd}\n";
 	echo "rpcallowip=127.0.0.1\n";
