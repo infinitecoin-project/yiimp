@@ -404,15 +404,15 @@ if ($coin->id) {
 	echo CHtml::opentag("pre");
 	$port = getAlgoPort($coin->algo);
 	$dedport = $coin->dedicatedport;
+	echo "daemon=1\n";
+    echo "server=1\n";
+    echo "listen=1\n";
+    echo "maxconnections=24\n";
+    echo "rpcthreads=64\n";
 	echo "rpcuser={$coin->rpcuser}\n";
 	echo "rpcpassword={$coin->rpcpasswd}\n";
-	echo "rpcport={$coin->rpcport}\n";
-	echo "rpcthreads=8\n";
 	echo "rpcallowip=127.0.0.1\n";
-	echo "# onlynet=ipv4\n";
-	echo "maxconnections=12\n";
-	echo "daemon=1\n";
-	echo "gen=0\n";
+	echo "rpcport={$coin->rpcport}\n";
 	echo "\n";
 	echo "alertnotify=echo %s | mail -s \"{$coin->name} alert!\" ".YAAMP_ADMIN_EMAIL."\n";
 	if (empty($coin->dedicatedport))
