@@ -71,6 +71,16 @@ span.solo
 	color: white; 
 	background-color: #48D8D8; 
 }
+span.merged	
+{ 
+	padding: 2px; 
+	display: inline-block; 
+	text-align: center; 
+	min-width: 15px; 
+	border-radius: 3px; 
+	color: white; 
+	background-color: #AB82FF; 
+}
 
 b.row a { font-size: 10pt; }
 .ssrow td.row { font-size: .8em; }
@@ -146,6 +156,8 @@ foreach($db_blocks as $db_block)
 	else if($db_block->solo == '0')
 		echo '<span class="shared" title="Block found was Shared">Shared</span>';
 	else 
+		echo '<span class="merged" title="Auxpow Merged Mining">Merged</span>';
+	else
 		echo '<span></span>';
 	echo "</td>";
 
