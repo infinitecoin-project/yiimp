@@ -170,11 +170,11 @@ endif;
 <div class="main-left-inner">
 
 <ul class="social-icons">
-<!--    <li><a href="http://www.facebook.com"><img src='/images/Facebook.png' /></a></li>
-    <li><a href="http://www.twitter.com"><img src='/images/Twitter.png' /></a></li>
-    <li><a href="http://www.youtube.com"><img src='/images/YouTube.png' /></a></li>
-    <li><a href="http://www.github.com"><img src='/images/Github.png' /></a></li> -->
-    <li><a href="https://discord.gg/DrsrWQh3qC"><img src='/images/discord.png' /></a></li>
+    <li><a href="https://facebook.com"><img src='/images/Facebook.png' /></a></li>
+    <li><a href="https://twitter.com"><img src='/images/Twitter.png' /></a></li>
+    <li><a href="https://youtube.com"><img src='/images/YouTube.png' /></a></li>
+    <li><a href="https://github.com"><img src='/images/Github.png' /></a></li> 
+    <li><a href="https://discord.com"><img src='/images/discord.png' /></a></li>
 </ul>
 
 </div></div><br>
